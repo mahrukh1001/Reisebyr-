@@ -46,30 +46,38 @@
                 <li><a href="#">Ski</a></li>
                 <li><a href="#">Kombinasjonsreiser</a></li>
             </ul>
-            <form>
-                <label for="fra">Fra</label>
-                <select class="fra-posisjon">
-                    <option value="1">Oslo Lufthavn</option>
-                    <option value="2">Torp Sandefjord Lufthavn</option>
-                    <option value="3">Bergen Lufthavn</option>
-                    <option value="4">Alta Lufthavn</option>
-                </select>
-            </form>
-            <select class="fra">
-                <option value="1">Oslo Lufthavn</option>
-                <option value="2">Torp Sandefjord Lufthavn</option>
-                <option value="3">Bergen Lufthavn</option>
-                <option value="4">Alta Lufthavn</option>
-            </select>
             <form class="skjema">
+                <!--Fra-->
                 <label for="fra">Fra</label>
+                <select class="fra-posisjon" required>
+                    <option value="" disabled selected>Oslo Lufthavn</option>
+                    <option value="torp">Torp Sandefjord Lufthavn</option>
+                    <option value="bergen">Bergen Lufthavn</option>
+                    <option value="alta">Alta Lufthavn</option>
+                </select>
                 
-
+                <!--Til-->
                 <label for="til">Til</label>
-                <input type="text" id="til" placeholder="Albania">
+                <select class="til-posisjon" required>
+                    <option value="" disabled selected>Albania</option>
+                    <option value="danmark">Danmark</option>
+                    <option value="finland">Finland</option>
+                    <option value="hellas">Hellas</option>
+                </select>
 
-                <label for="reiselenge">Reiselengde</label>
-                <input type="text" id="reiselengde" placeholder="Mindre enn 1 uke">
+                <label for="reiselengde">Reiselengde</label>
+                <select class="reiselengde" required>
+                    <option value="" disabled selected>Mindre enn 1 uke</option>
+                    <option value="kort">1 Uke</option>
+                    <option value="medium">2 Uker</option>
+                    <option value="lang">Mer enn 2 uker</option>
+                </select>
+
+                <label for="dato">Velg dato</label>
+                <input type="date" name="dato" required minlength="4" maxlength="4">
+                
+                <label for="antall">Antall reisende</label>
+                <input type="number" name antall="2" min="2" max="20" value="2" required>
             </form>
 
 
