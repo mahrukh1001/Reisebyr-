@@ -40,17 +40,17 @@
         </section>
         <section class="bestillingskjema">
             <ul class="bestilling-links">
-                <li><a href="#">Fly + Hotell </a></li>
-                <li><a href="#">Fly</a></li>
-                <li><a href="#">Storby</a></li>
-                <li><a href="#">Ski</a></li>
-                <li><a href="#">Kombinasjonsreiser</a></li>
+                <li><i class="fa-solid fa-suitcase"></i><a href="#">Fly + Hotell </a></li>
+                <li><i class="fa-solid fa-plane"></i><a href="#">Fly</a></li>
+                <li><i class="fa-solid fa-city"></i><a href="#">Storby</a></li>
+                <li><i class="fa-solid fa-person-skiing"></i><a href="#">Ski</a></li>
+                <li><i class="fa-solid fa-map-location-dot"></i><a href="#">Kombinasjonsreiser</a></li>
             </ul>
             <form class="skjema">
                 <!--Fra-->
                 <label for="fra">Fra</label>
                 <select class="fra-posisjon" required>
-                    <option value="" disabled selected>Oslo Lufthavn</option>
+                    <option value="oslo">Oslo Lufthavn</option>
                     <option value="torp">Torp Sandefjord Lufthavn</option>
                     <option value="bergen">Bergen Lufthavn</option>
                     <option value="alta">Alta Lufthavn</option>
@@ -59,7 +59,7 @@
                 <!--Til-->
                 <label for="til">Til</label>
                 <select class="til-posisjon" required>
-                    <option value="" disabled selected>Albania</option>
+                    <option value=albania">Albania</option>
                     <option value="danmark">Danmark</option>
                     <option value="finland">Finland</option>
                     <option value="hellas">Hellas</option>
@@ -78,6 +78,9 @@
                 
                 <label for="antall">Antall reisende</label>
                 <input type="number" name antall="2" min="2" max="20" value="2" required>
+
+                <button type="submit" class="bestilling-knapp">Søk</button>
+
             </form>
 
 
