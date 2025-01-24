@@ -12,90 +12,114 @@
 </head>
 <body>
     <header>
-        <!--Toppområde-->
+        <section class="topp">
+            <!--Toppområde-->
+        <div class="logo">
+            <img src="img/fav.png" alt="Logo">
+        </div>
         <form class="top-bar" action="order.html" method="get">
             <a href="order.html" class="search-icon" aria-label="Søk ikon">
                 <i class="fa-solid fa-magnifying-glass" aria-label="Søk ikon"></i>
             </a>
-            <a href="opprett-konto.html" class="btn">Opprett en konto</a>
             <a href="min-side.html" class="user-icon">
-                <i class="fas fa-user"></i> Min side
+                <i class="fas fa-user"></i> 
             </a>
+            <a href="opprett-konto.html" class="btn">
+                <i class="fa-solid fa-bars" aria-label="Opprett konto"></i>
+            </a>
+
+        </section>
+       
+            
+    
         </form>
 
         <!--Navigasjon og logo-->
-        <div class="logo">
-            <img src="img/fav.png" alt="Logo">
-        </div>
+        
+        <!--
         <nav>
             <ul class="nav-links">
-                <a href="#tips-inspirasjon">Tips og inspirasjon</a> <!--Føre til Tips og inspirasjon seksjonen på forsiden, uansett hvem side du er på-->
+                <a href="#tips-inspirasjon">Tips og inspirasjon</a> 
                 <a href="hotell.html">Hotell</a>
                 <a href="https://www.norwegian.no" target="_blank">Fly</a>
-                <a href="#footer">Kontakt</a> <!--Skal sende deg til footer-->
+                <a href="#footer">Kontakt</a> 
             </ul>
         </nav>
+        -->
+        
 
         <section class="banner">
-            <section class="bestillingskjema">
-                <div class="scroll-container">
-                    <ul class="bestilling-links">
-                        <li><i class="fa-solid fa-suitcase"></i>
-                            <a href="#">Fly + Hotell </a>
-                        </li>
-                        <li><i class="fa-solid fa-plane"></i>
-                            <a href="#">Fly</a>
-                        </li>
-                        <li><i class="fa-solid fa-city"></i>
-                            <a href="#">Storby</a>
-                        </li>
-                        <li><i class="fa-solid fa-person-skiing"></i>
-                            <a href="#">Ski</a>
-                        </li>
-    
-                        <li><i class="fa-solid fa-map-location-dot"></i>
-                            <a href="#">Kombinasjonsreiser</a>
-                        </li>
-                    </ul>
-                    <i class="fa-solid fa-chevron-right scroll-arrow"></i>
-                </div>
-            </section>
-            <form class="skjema">
-                <!--Fra-->
-                <label for="fra">Fra</label>
-                <select class="fra-posisjon" required>
-                    <option value="oslo">Oslo Lufthavn</option>
-                    <option value="torp">Torp Sandefjord Lufthavn</option>
-                    <option value="bergen">Bergen Lufthavn</option>
-                    <option value="alta">Alta Lufthavn</option>
-                </select>
-                    
-                <!--Til-->
-                <label for="til">Til</label>
-                <select class="til-posisjon" required>
-                    <option value="albania">Albania</option>
-                    <option value="danmark">Danmark</option>
-                    <option value="finland">Finland</option>
-                    <option value="hellas">Hellas</option>
-                </select>
-    
-                <label for="reiselengde">Reiselengde</label>
-                <select class="reiselengde" required>
-                    <option value="">Mindre enn 1 uke</option>
-                    <option value="kort">1 Uke</option>
-                    <option value="medium">2 Uker</option>
-                    <option value="lang">Mer enn 2 uker</option>
-                </select>
-    
-                <label for="dato">Velg dato</label>
-                <input type="date" name="dato" required minlength="4" maxlength="4">
-                    
-                <label for="antall">Antall reisende</label>
-                <input type="number" name antall="2" min="2" max="20" value="2" required>
-    
-                <button type="submit" class="bestilling-knapp">Søk</button>
-            </form>
-        </section>  
+            <div class="container">
+                <section class="bestillingskjema">
+                    <div class="scroll-container">
+                        <ul class="bestilling-links">
+                            <li class="active"><i class="fa-solid fa-suitcase"></i>
+                                <a href="#">Fly + Hotell </a>
+                            </li>
+                            <li><i class="fa-solid fa-plane"></i>
+                                <a href="#">Fly</a>
+                            </li>
+                            <li><i class="fa-solid fa-city"></i>
+                                <a href="#">Storby</a>
+                            </li>
+                            <li><i class="fa-solid fa-person-skiing"></i>
+                                <a href="#">Ski</a>
+                            </li>
+        
+                            <li><i class="fa-solid fa-map-location-dot"></i>
+                                <a href="#">Kombinasjonsreiser</a>
+                            </li>
+                        </ul>
+                        <i class="fa-solid fa-chevron-right scroll-arrow"></i>
+                    </div>
+                </section>
+                <form class="skjema">
+                    <!--Fra-->
+                    <label for="fra">Fra</label>
+                    <select class="fra-posisjon" required>
+                        <option value="oslo">Oslo Lufthavn</option>
+                        <option value="torp">Torp Sandefjord Lufthavn</option>
+                        <option value="bergen">Bergen Lufthavn</option>
+                        <option value="alta">Alta Lufthavn</option>
+                    </select>
+                        
+                    <!--Til-->
+                    <label for="til">Til</label>
+                    <select class="til-posisjon" required>
+                        <option value="albania">Albania</option>
+                        <option value="danmark">Danmark</option>
+                        <option value="finland">Finland</option>
+                        <option value="hellas">Hellas</option>
+                    </select>
+        
+                    <label for="reiselengde">Reiselengde</label>
+                    <select class="reiselengde" required>
+                        <option value="">Mindre enn 1 uke</option>
+                        <option value="kort">1 Uke</option>
+                        <option value="medium">2 Uker</option>
+                        <option value="lang">Mer enn 2 uker</option>
+                    </select>
+        
+                    <label for="dato">Velg dato</label>
+                    <input type="date" name="dato" required minlength="4" maxlength="4">
+                        
+                    <label for="antall">Antall reisende</label>
+                    <input type="number" name antall="2" min="2" max="20" value="2" required>
+        
+                    <button type="submit" class="bestilling-knapp">Søk</button>
+                </form>
+            </div>
+            
+        </section>
+        <section class="kampanje">
+            <article class="tekstboks">
+                <h3>Bestill sommerens beste uke</h3>
+                <p> Fly + hotell, 7 dager</p>
+                <p>Fra 3 298,-</p>
+                <a href="#">Bestill i dag</a>
+            </article>
+        </section>
+
     </header>
     <main>
             
