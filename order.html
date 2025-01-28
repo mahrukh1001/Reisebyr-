@@ -32,17 +32,71 @@
     <main>
         <nav class="progressbar">
             <a href="#">Søk</a>
-            <a href="#">Søkeresultater</a>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+            <a href="hotell.html">Søkeresultater</a>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
             <a href="#">Rom</a>
-            <a href="#">Fly</a>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+            <a href="https://www.norwegian.no/">Fly</a>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
             <a href="#">Tillegg</a>
-            <a href="#">OPPLYSNINGER</a>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
+            <a href="#"  class="active">OPPLYSNINGER</a>
+            <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
             <a href="#">Bestill</a>
         </nav>
-        <a href="#">Dine valg <i class="fa-solid fa-chevron-right"></i></a>
-        <section class="order-bestilling">
-
+        <section class="dine-valg">
+            <a href="#">Dine valg <i class="fa-solid fa-chevron-right"></i></a>
         </section>
+       
+
+        <section class="order-bestilling">
+            <fieldset class="bestiller">
+                <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
+                
+                <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
+                <input type="text" id="fornavn" name="fornavn" required>
+
+                <label for="etternavn">ETTERNAVN (FØLGE PASS):</label>
+                <input type="text" id="etternavn" name="etternavn" required>
+
+                <label for="fødselsdato">FØDSELSDATO:</label>
+                <section class="fødselsdato">
+                    <select id="dag" name="dag">
+                        <option value="" disabled selected>DD</option>
+                    </select>
+                    <select id="måned" name="måned">
+                        <option value="" disabled selected>MM</option>
+                    </select>
+                    <select id="år" name="år">
+                        <option value="" disabled selected>ÅÅÅÅ</option>
+                    </select>
+                </section>
+
+                <label for="kjønn">KJØNN</label>
+                <section class="kjønn">
+                    <input type="radio" id="kvinne" name="kjønn" value="kvinne">
+                    <label for="kvinne">KVINNE</label>
+                    <input type="radio" id="mann" name="kjønn" value="mann">
+                    <label for="mann">MANN</label>
+                </section>
+
+                <label for="epost">E-POSTADRESSE:</label>
+                <input type="email" id="epost" name="epost" required>
+
+                <label for="telefon">TELEFONNUMMER:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+
+                <label for="adresse">GATEADRESSE:</label>
+                <input type="text" id="adresse" name="adresse" required>
+
+                <label for="postnummer">POSTNUMMER:</label>
+                <input type="text" id="postnummer" name="postnummer" required>
+
+
+            </fieldset>
+        </section>
+
         <section class="oversikt">
 
         </section>
