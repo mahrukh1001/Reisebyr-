@@ -49,7 +49,7 @@
             <a href="#">Dine valg <i class="fa-solid fa-chevron-right"></i></a>
         </section>
        
-
+        <h3 class="opplysninger">Oppgi dine bestillingsopplysninger</h3>
         <section class="order-bestilling">
             <fieldset class="bestiller">
                 <legend>VOKSEN 18+ HOVEDBESTILLER</legend>
@@ -62,15 +62,9 @@
 
                 <label for="fødselsdato">FØDSELSDATO:</label>
                 <section class="fødselsdato">
-                    <select id="dag" name="dag">
-                        <option value="" disabled selected>DD</option>
-                    </select>
-                    <select id="måned" name="måned">
-                        <option value="" disabled selected>MM</option>
-                    </select>
-                    <select id="år" name="år">
-                        <option value="" disabled selected>ÅÅÅÅ</option>
-                    </select>
+                    <input type="number" id="dag" name="dag" placeholder="DD" min="1" max="31">
+                    <input type="number" id="måned" name="måned" placeholder="MM" min="1" max="12">
+                    <input type="number" id="år" name="år" placeholder="ÅÅÅÅ" min="1900" max="2100">
                 </section>
 
                 <label for="kjønn">KJØNN</label>
@@ -93,8 +87,43 @@
                 <label for="postnummer">POSTNUMMER:</label>
                 <input type="text" id="postnummer" name="postnummer" required>
 
+                <label for="poststed">POSTSTED:</label>
+                <input type="text" id="poststed" name="poststed" required>
 
+                <label for="land">LAND</label>
+                <select id="land" name="land">
+                    <option value="" disabled selected>Velg et land</option>
+                </select>
             </fieldset>
+
+            <fieldset class="person-nummer-to">
+                <legend>VOKSEN 18+</legend>
+
+                <label for="fornavn2">FORNAVN (IFØLGE PASS):</label>
+                <input type="text" id="fornavn2" name="fornavn2" required>
+
+                <label for="etternavn2">ETTERNAVN (IFØLGE PASS):</label>
+                <input type="text" id="etternavn2" name="etternavn2" required>
+
+                <label for="fødselsdato2">FØDSELSDATO:</label>
+                <section class="fødselsdato">
+                    <input type="number" id="dag" name="dag" placeholder="DD" min="1" max="31">
+                    <input type="number" id="måned" name="måned" placeholder="MM" min="1" max="12">
+                    <input type="number" id="år" name="år" placeholder="ÅÅÅÅ" min="1900" max="2100">
+                </section>
+
+                <label for="kjønn2">KJØNN</label>
+                <section class="kjønn">
+                    <input type="radio" id="kvinne2" name="kjønn2" value="kvinne">
+                    <label for="kvinne2">KVINNE</label>
+                    <input type="radio" id="mann2" name="kjønn2" value="mann">
+                    <label for="mann2">MANN</label>
+                </section>
+            </fieldset>
+            <button class="siste-trinn">
+                Siste trinn  <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
         </section>
 
         <section class="oversikt">
