@@ -36,21 +36,33 @@ body {
     .topp {
         padding: 20px 40px;
         display: flex;
-        justify-content: flex-end; 
+        justify-content: space-between; 
         align-items: center;
         gap: 20px;
     }
 
-    
+    .logo{
+        margin-right: auto;
+        
+    }
+    .logo img{
+        width: 80px;
+        height: auto;
+    }
     .top-bar {
         display: none;
     }
 
     
     .pc-nav {
+        position: absolute;
+        right: 40px;
         display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
         align-items: center;
         gap: 15px;
+        width: 100%;
     }
 
     
@@ -76,7 +88,12 @@ body {
     .pc-navlink {
         display: flex;
         justify-content: flex-end; 
-        margin-top: 10px;
+        width: 100%;
+        margin-top: 60px;
+        margin-left: 300px;
+        padding-right: -150px;
+        
+       
     }
 
     .nav-links {
@@ -86,6 +103,9 @@ body {
         list-style: none;
         padding: 0;
         margin: 0;
+        border-bottom: none;
+        margin-left: -20px;
+        
     }
 
     .nav-links a {
@@ -93,7 +113,10 @@ body {
         color: black;
         font-size: 16px;
         font-weight: bold;
+        
+        
     }
+
 }
   
     
@@ -266,6 +289,135 @@ body {
     font-size: 14px;
 }
 
+@media (min-width: 1024px) {
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 200px; 
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container {
+        max-width: 1000px;
+        width: 80%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 95%; 
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+        margin-bottom: 50px;
+    }
+
+    .bestilling-links {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        list-style: none;
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 18px;
+    }
+
+    .bestilling-links li {
+        font-size: 18px;
+        font-weight: bold;
+        position: relative;
+    }
+
+    .bestilling-links li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .bestilling-links li.active::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #1ca2c1;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+    }
+
+   
+    .scroll-arrow {
+        display: none !important;
+    }
+
+    .skjema {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr 1fr 1fr; 
+        gap: 15px;
+        max-width: 1000px;
+        margin: auto;
+        align-items: center;
+    }
+
+    
+    .reiselengde-dato {
+        display: flex;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .reiselengde-dato .input-container:first-child {
+        flex-grow: 3;
+    }
+
+    .reiselengde-dato .input-container select {
+        width: 100%;
+    }
+
+    .skjema select,
+    .skjema input {
+        padding: 12px;
+        border: 1px solid #666;
+        font-size: 16px;
+        background: white;
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+    }
+
+    .bestilling-knapp {
+        background-color: #ffcf40;
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        text-align: center;
+        padding: 15px;
+        border: none;
+        width: 100%;
+        font-size: 16px;
+        grid-column: span 1;
+    }
+
+    .input-container {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .skjema label {
+        font-size: 14px;
+        font-weight: normal;
+        color: #666;
+        position: absolute;
+        top: -8px;
+        left: 10px;
+        background: white;
+        padding: 0 5px;
+    }
+}
+
+
 
 
 
@@ -348,3 +500,167 @@ body {
     margin-top: -30px;
     
 }
+
+.kort-container article {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    text-align: left;
+    height: 120px;
+    min-width: 200px; 
+    max-width: 300px; 
+    flex-shrink: 0; 
+}
+
+.kort-container h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.kort-container a {
+    font-size: 14px;
+    color: #1ca2c1; 
+    text-decoration: none;
+    display: inline-block;
+    margin: 15px 0 10px;
+}
+
+.kort-container a:hover {
+    text-decoration: underline;
+}
+
+.kort-container i {
+    color: #1ca2c1; 
+    font-size: 14px;
+    margin-left: 2px;
+}
+
+@media (min-width: 1024px) and (max-width: 1900px){
+    .kampanje {
+        height: 500px; 
+        width: 90%;
+        max-width: 1200px; 
+        margin: 120px auto 20px auto;
+        border-radius: 10px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        position: relative;
+        
+    }
+
+    
+    .tekstboks {
+        background-color: #52d3f0;
+        border-radius: 0 40px 0 40px; 
+        padding: 50px;
+        text-align: left;
+        max-width: 450px;
+        height: auto;
+        position: absolute;
+        top: 50px; 
+        right: 50px;
+    }
+
+    .tekstboks h3 {
+        font-size: 28px;
+    }
+
+    .tekstboks p {
+        font-size: 18px;
+    }
+
+    .tekstboks p:last-of-type {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    
+    .tekstboks a {
+        background-color: #ffcf40;
+        color: black;
+        text-decoration: none;
+        padding: 15px 25px;
+        font-size: 18px;
+        font-weight: bold;
+        border-radius: 5px;
+        position: absolute;
+        bottom: -60px;
+        right: 2px;
+    }
+
+
+    .artikkelkort {
+        width: 90%;
+        margin: 50px auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .kort-container {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: -40px;
+    }
+
+    .kort-container article {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        text-align: left;
+        height: auto;
+        width: 100%;
+        max-width: 300px;
+        flex-grow: 1;
+        margin-top: -20px;
+    }
+    .kort-container article:nth-child(1) {
+        flex-basis: 40%; 
+    }
+
+    .kort-container article:nth-child(2) {
+        flex-basis: 25%;
+    }
+
+    .kort-container article:nth-child(3) {
+        flex-basis: 35%;
+    }
+
+    .kort-container h4 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .kort-container a {
+        font-size: 16px;
+        color: #1ca2c1;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 10px;
+    }
+
+    .kort-container a:hover {
+        text-decoration: underline;
+    }
+
+    .kort-container i {
+        color: #1ca2c1;
+        font-size: 16px;
+        margin-left: 5px;
+    }
+}
+
+
+
+
+
+
+
