@@ -267,3 +267,84 @@ body {
 }
 
 
+
+
+
+.kampanje {
+    background-image: url('../img/holiday-2733322_1280.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 10px;
+    margin: 70px auto;
+    width: 90%;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tekstboks {
+    background-color:#52d3f0;;
+    border-radius: 0 30px 0 30px;
+    padding: 30px;
+    text-align: left;
+    margin-bottom: 120px;
+    height: 200px;
+    max-width: 300px;
+    padding: 60px 40px 20px 40px;
+    
+}
+
+.tekstboks h3 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 20px 20px 0;
+}
+
+.tekstboks p {
+    color: black;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+}
+
+.tekstboks p:last-of-type{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.tekstboks a {
+    display: inline-block;
+    background-color: #ffcf40;
+    color: black;
+    text-decoration: none;
+    padding: 13px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    bottom: 90px;
+    right: 86px;
+    
+}
+
+
+.artikkelkort {
+    margin: 50px auto;
+    padding: 20px 0;
+    overflow-x: auto; 
+    margin-left: 25px;
+}
+
+.kort-container {
+    display: flex; 
+    gap: 23px; 
+    width: max-content; 
+    margin-top: -30px;
+    
+}
