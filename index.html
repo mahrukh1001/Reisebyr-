@@ -14,38 +14,54 @@
     <header>
         <section class="topp">
             <!--Toppområde-->
-        <div class="logo">
+            <div class="logo">
             <img src="img/fav.png" alt="Logo">
-        </div>
-        <form class="top-bar" action="order.html" method="get">
+            </div>
+            <form class="top-bar" action="order.html" method="get">
             <a href="order.html" class="search-icon" aria-label="Søk ikon">
-                <i class="fa-solid fa-magnifying-glass" aria-label="Søk ikon"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </a>
             <a href="min-side.html" class="user-icon">
                 <i class="fas fa-user"></i> 
             </a>
             <a href="opprett-konto.html" class="btn">
-                <i class="fa-solid fa-bars" aria-label="Opprett konto"></i>
+                <i class="fa-solid fa-bars"></i>
             </a>
+            
+            
+            </form>
+
+            <section class="pc-nav">
+                <a href="order.html" class="search-icon"></a>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
+                <a href="oprett-konto" class="btn">
+                    Opprett en konto
+                </a>
+                <a href="min-side.html" class="btn">
+                    <i class="fa-regular fa-user"></i> Min side
+                </a>
+            </section>
+
+
+            <nav class="pc-navlink">
+                <ul class="nav-links">
+                    <a href="#tips-inspirasjon">Tips og inspirasjon</a> 
+                    <a href="hotell.html">Hotell</a>
+                    <a href="https://www.norwegian.no" target="_blank">Fly</a>
+                    <a href="#footer">Kontakt</a> 
+                </ul>
+            </nav>
+
+
 
         </section>
-       
-            
-    
-        </form>
-
-        <!--Navigasjon og logo-->
         
-        <!--
-        <nav>
-            <ul class="nav-links">
-                <a href="#tips-inspirasjon">Tips og inspirasjon</a> 
-                <a href="hotell.html">Hotell</a>
-                <a href="https://www.norwegian.no" target="_blank">Fly</a>
-                <a href="#footer">Kontakt</a> 
-            </ul>
-        </nav>
-        -->
+        </section>
+        
+        
+        
+        
         
 
         <section class="banner">
@@ -74,37 +90,49 @@
                     </div>
                 </section>
                 <form class="skjema">
-                    <!--Fra-->
-                    <label for="fra">Fra</label>
-                    <select class="fra-posisjon" required>
-                        <option value="oslo">Oslo Lufthavn</option>
-                        <option value="torp">Torp Sandefjord Lufthavn</option>
-                        <option value="bergen">Bergen Lufthavn</option>
-                        <option value="alta">Alta Lufthavn</option>
-                    </select>
+                    <section class="input-container">
+                        <label for="fra">Fra</label>
+                        <select class="fra-posisjon" required>
+                            <option value="oslo">Oslo Lufthavn</option>
+                            <option value="torp">Torp Sandefjord Lufthavn</option>
+                            <option value="bergen">Bergen Lufthavn</option>
+                            <option value="alta">Alta Lufthavn</option>
+                        </select>
+                    </section>
+                    
+                    <section class="input-container">
+                        <label for="til">Til</label>
+                        <select class="til-posisjon" required>
+                            <option value="albania">Albania</option>
+                            <option value="danmark">Danmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="hellas">Hellas</option>
+                        </select>
+                    </section>  
+
+                    <section class="reiselengde-dato">
+                        <section class="input-container">
+                            <label for="reiselengde">Reiselengde</label>
+                            <select class="reiselengde" required>
+                                <option value="">Mindre enn 1 uke</option>
+                                <option value="kort">1 Uke</option>
+                                <option value="medium">2 Uker</option>
+                                <option value="lang">Mer enn 2 uker</option>
+                            </select>
+                        </section>
                         
-                    <!--Til-->
-                    <label for="til">Til</label>
-                    <select class="til-posisjon" required>
-                        <option value="albania">Albania</option>
-                        <option value="danmark">Danmark</option>
-                        <option value="finland">Finland</option>
-                        <option value="hellas">Hellas</option>
-                    </select>
-        
-                    <label for="reiselengde">Reiselengde</label>
-                    <select class="reiselengde" required>
-                        <option value="">Mindre enn 1 uke</option>
-                        <option value="kort">1 Uke</option>
-                        <option value="medium">2 Uker</option>
-                        <option value="lang">Mer enn 2 uker</option>
-                    </select>
-        
-                    <label for="dato">Velg dato</label>
-                    <input type="date" name="dato" required minlength="4" maxlength="4">
-                        
-                    <label for="antall">Antall reisende</label>
-                    <input type="number" name antall="2" min="2" max="20" value="2" required>
+                            
+                        <section class="input-container">
+                            <label for="dato">Velg dato</label>
+                            <input type="date" name="dato" required minlength="4" maxlength="4">
+                        </section>
+                    </section>
+
+                    <section class="input-container">
+                        <label for="antall">Antall reisende</label>
+                        <input type="number" name antall="2" min="2" max="20" value="2" required>
+                    </section>
+                    
         
                     <button type="submit" class="bestilling-knapp">Søk</button>
                 </form>
@@ -120,7 +148,7 @@
                 <h3>Bestill sommerens beste uke</h3>
                 <p> Fly + hotell, 7 dager</p>
                 <p>Fra 3 298,-</p>
-                <a href="#">Bestill i dag</a>
+                <a href="order.html">Bestill i dag</a>
             </article>
         </section>
         
@@ -146,8 +174,9 @@
                 
             </aside>
         </section>
+        
         <section class="Tips-og-inspo">
-            <h3>Tips & inspirasjon</h3>
+            <h3 class="tips">Tips & inspirasjon</h3>
             <aside class="tips-artikkelkort">
                 <figure>
                     <span class="badge">Ukens Deal</span>
@@ -274,12 +303,12 @@
             <form class="form">
                 <p>Meld deg på nyhetsbrev her</p>
                 <input type="email" placeholder="ola@example.com..." id="email">
+                <button>
+                    Send
+                </button>
             </form>
             <a href="#">Kjøp reisegavekort</a>
-            <button>
-                <p>Send</p>
-            </button>
-
+           
         </section>
 
         <section class="kundeservice">

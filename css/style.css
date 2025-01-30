@@ -1,29 +1,269 @@
-footer{
-    background-color: #252525;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.topp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 50px;
+}
+
+.top-bar a {
+    font-size: 20px;
+    color: black;
+    margin-left: 15px;
+    text-decoration: none;
+}
+
+.pc-nav {
+    display: none;
+}
+.pc-navlink{
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .topp {
+        padding: 20px 40px;
+        display: flex;
+        justify-content: flex-end; 
+        align-items: center;
+        gap: 20px;
+    }
 
     
-}
-.nyheter a{
-    color: white;
+    .top-bar {
+        display: none;
+    }
+
     
+    .pc-nav {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    
+    .pc-nav .btn {
+        font-size: 16px;
+        font-weight: bold;
+        color: #1ca2c1;
+        text-decoration: none;
+        padding: 10px 15px;
+        border: 2px solid #1ca2c1;
+        border-radius: 30px; 
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        background: white;
+    }
+
+    .pc-nav .btn i {
+        font-size: 18px;
+    }
+
+    
+    .pc-navlink {
+        display: flex;
+        justify-content: flex-end; 
+        margin-top: 10px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: flex-end; 
+        gap: 20px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-links a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-weight: bold;
+    }
 }
+  
+    
+
+    
+    
+
+
+
+
+
 .banner {
-    background-image: url(../img/sea-4768869_1920.jpg);
+    background-image: url('../img/sea-4768869_1920.jpg');
     background-size: cover;
     background-position: center;
-    max-width: 100%;
     height: 400px;
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
 }
-.scroll-container{
+
+.container {
+    max-width: 1000px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.scroll-container {
     display: flex;
     align-items: center;
     overflow-x: auto;
-    scrollbar-width: thin;
-    scroll-snap-type: x mandatory;
-    position: relative;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    padding: 5px 0;
+    margin-bottom: 15px;
+    z-index: 2;
 }
-.bestilling-links{
+
+.scroll-container::-webkit-scrollbar {
+    height: 3px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+}
+
+.bestilling-links {
     display: flex;
     gap: 20px;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
+
+.bestilling-links li {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+}
+
+.bestilling-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.bestilling-links li.active::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #1ca2c1;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+}
+
+.scroll-arrow {
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    position: sticky;
+    right: 0;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 8px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.skjema {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 10px;
+}
+
+
+.skjema select,
+.skjema input {
+    padding: 12px;
+    border: 1px solid #666;
+    border-radius: 0;
+    font-size: 14px;
+    background: white;
+    width: 100%;
+    height: 50px; 
+    box-sizing: border-box;
+}
+
+
+.skjema .reiselengde-dato {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+
+.skjema label {
+    font-size: 12px;
+    font-weight: normal;
+    display: block;
+    color: #666;
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    background: white;
+    padding: 0 5px;
+}
+
+
+.skjema .input-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.skjema input[type="date"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-align: left;
+    padding-right: 40px;
+}
+
+
+.skjema .bestilling-knapp {
+    background-color: #ffcf40;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+
