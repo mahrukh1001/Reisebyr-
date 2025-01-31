@@ -1884,3 +1884,74 @@ nav ul li a.active::after {
     font-size: 40px;
 }
 
+
+
+@media (min-width: 1024px) and (max-width: 1400px) {
+    .progressbar {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background-color: #1ca2c1;
+        padding: 5px 10px;
+        border-radius: 5px;
+        height: 40px;
+        width: auto;
+        max-width: 1000px; 
+        margin: 20px auto; 
+        overflow: hidden; 
+        flex-shrink: 0;
+    }
+
+    .progressbar a {
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        font-size: 20px;
+        white-space: nowrap; 
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+    }
+
+    .progressbar i {
+        margin: 0 8px;
+        display: flex;
+        align-items: center;
+        font-size: 40px;
+        color: white;
+    }
+
+    .progressbar .active {
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+}
+
+
+
+.dine-valg {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+    padding: 15px 20px;
+    margin: 10px 0;
+    width: 100%;
+    max-width: 480px;
+    margin-left: 20px;
+    margin-right: auto;
+    
+}
+
+.dine-valg a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.dine-valg i {
+    font-size: 16px;
+    margin-left: 8px;
+}
