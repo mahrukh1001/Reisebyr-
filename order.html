@@ -15,7 +15,7 @@
     <header>
         <section class="topp">
             <div class="logo">
-                <img src="img/fav.png" alt="Logo">
+                <a href="index.html"><img src="img/fav.png" alt="Logo">
             </div>
 
             <form class="top-bar" action="order.html" method="get">
@@ -42,10 +42,10 @@
             </section>
             <nav class="pc-navlink">
                 <ul class="nav-links">
-                    <a href="#tips-inspirasjon">Tips og inspirasjon</a> 
+                    <a href="index.html#tips-og-info">Tips og inspirasjon</a> 
                     <a href="hotell.html">Hotell</a>
                     <a href="https://www.norwegian.no" target="_blank">Fly</a>
-                    <a href="#footer">Kontakt</a> 
+                    <a href="order.html#footer">Kontakt</a> 
                 </ul>
             </nav>
         </section>
@@ -60,19 +60,19 @@
     </header>
     <main>
         <nav class="progressbar">
-            <a href="#">Søk</a>
+            <a href="index.html#bestillingskjema">Søk</a>
             <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
             <a href="hotell.html">Søkeresultater</a>
             <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-            <a href="#">Rom</a>
+            <a href="hotell.html#velg-rom">Rom</a>
             <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-            <a href="https://www.norwegian.no/">Fly</a>
+            <a href="https://www.norwegian.no/" target="_blank">Fly</a>
             <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
             <a href="#">Tillegg</a>
             <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-            <a href="#"  class="active">OPPLYSNINGER</a>
+            <a href="order.html"  class="active">OPPLYSNINGER</a>
             <i class="fa-solid fa-chevron-right" style="color: #ffffff;"></i>
-            <a href="#">Bestill</a>
+            <a href="order.html#siste-trinn">Bestill</a>
         </nav>
         <section class="dine-valg">
             <details class="detail">
@@ -202,7 +202,7 @@
                     <label for="mann2">MANN</label>
                 </section>
             </fieldset>
-            <button class="siste-trinn">
+            <button class="siste-trinn" id="siste-trinn">
                 Siste trinn  <i class="fa-solid fa-arrow-right"></i>
             </button>
 
@@ -210,7 +210,7 @@
 
        
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <section class="flags">
             <div class="rad1">
                 <img src="flags/sweden.png">

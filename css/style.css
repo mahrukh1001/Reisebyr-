@@ -30,6 +30,7 @@ footer {
     text-decoration: none;
 }
 
+
 .pc-nav {
     display: none;
 }
@@ -384,7 +385,6 @@ footer {
         background-color: #ffcf40;
         color: black;
         font-weight: bold;
-        cursor: pointer;
         text-align: center;
         padding: 15px;
         border: none;
@@ -1029,4 +1029,103 @@ footer {
     margin: 40px 0 20px 0;
 }
 
+.oversikt .sol {
+    display: flex;
+    gap: 5px;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
 
+.oversikt .score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0 15px 0;
+    
+}
+
+.oversikt .score p:first-child {
+    background-color: #019101;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin: 0;
+    font-size: 13px;
+}
+
+.oversikt .score p:last-child {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.oversikt a {
+    color: #1ca2c1;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.oversikt a i {
+    margin-left: 5px;
+}
+.fasiliteter {
+    max-width: 600px;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.fasiliteter h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.fasiliteter p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+
+.fasiliteter .ikon-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+}
+
+
+.fasiliteter .ikon-rad1,
+.fasiliteter .ikon-rad2 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px; 
+}
+
+
+.fasiliteter p {
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.fasiliteter i {
+    font-size: 15px;
+
+}
+
+.fasiliteter a {
+    color: #1ca2c1;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.fasiliteter a i {
+    margin-left: 3px;
+}
