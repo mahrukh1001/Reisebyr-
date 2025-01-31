@@ -1015,6 +1015,7 @@ footer {
 }
 
 
+
 .pc-flag {
     display: none;
 }
@@ -1311,6 +1312,57 @@ footer {
     display: block;
 }
 
+@media (min-width: 1024px) {
+    nav {
+        max-width: 1000px;  
+        margin: 0 auto;      
+        padding: 0 20px;     
+    }
+
+    .info-wrap {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        grid-template-rows: auto auto;
+        gap: 40px;
+        max-width: 1000px;
+        margin: 0 auto;
+        align-items: start;
+        
+    }
+
+    .oversikt {
+        grid-column: 1;
+        grid-row: 1;
+        flex-direction: column;
+        justify-content: center;
+        
+    }
+
+    .fasiliteter {
+        grid-column: 1 / span 2; 
+        grid-row: 2; 
+        margin-top: -60px;
+        max-width: 65%;
+    }
+    
+
+    .kart {
+        grid-column: 2; 
+        grid-row: 1 / span 2;
+        margin-top: 45px;
+        margin-right: -25px;
+       
+    }
+
+    .kart iframe {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        
+    }
+}
+
+
 
 .tilgjengelige-rom {
     max-width: 1000px;
@@ -1339,4 +1391,62 @@ footer {
     gap: 40px; 
     justify-content: center;
     margin-top: -40px; 
+}
+
+.rom {
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 450px; 
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    margin-bottom: 30px; 
+    padding-bottom: 0;
+}
+
+
+.velg-selv {
+    position: sticky; 
+    bottom: 0; 
+    left: 0;
+    width: 83%; 
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); 
+    border-radius: 50px 50px 0 0;
+    
+}
+.pris-seksjon{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    line-height: 1.2;
+}
+
+.velg-selv .over {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.velg-selv .under {
+    font-size: 16px;
+    color: #666;
+    margin-top: -22px;
+}
+
+
+.velg-selv .blå-boks {
+    background: #1ca2c1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+    
 }
