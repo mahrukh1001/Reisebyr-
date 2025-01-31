@@ -1149,3 +1149,34 @@ footer {
     height: 400px; 
     display: block;
 }
+
+
+
+.tilgjengelige-rom {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.velg-rom {
+    font-size: 26px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+    max-width: 500px;
+    margin-left: 15px;
+    margin-bottom: -20px;
+}
+
+
+.rom-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px; 
+    justify-content: center;
+    margin-top: -40px; 
+}
