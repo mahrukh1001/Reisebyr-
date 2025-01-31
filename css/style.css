@@ -829,3 +829,204 @@ footer {
     padding: 20px; 
     background-color:#252525;
 }
+
+.flags {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; 
+    color: white;
+    margin-top: 20px;
+    padding-left: 50px;
+}
+
+.flags .rad1, 
+.flags .rad2 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 15px; 
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.flags .rad2{
+    margin-top: -10px;
+}
+.flags img {
+    width: 50px; 
+    height: auto;
+}
+
+
+.betalingsikoner { 
+    gap: 22px;
+    padding: 10px;
+    color: white;
+}
+
+.betalingsikoner i {
+    font-size: 30px; 
+    margin-right: 15px;
+}
+
+
+.nyheter {
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+    color: white;
+    padding: 10px;
+}
+
+.nyheter h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
+.nyheter .form {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    padding: 25px 30px;
+    gap: 10px;
+    width: 75%;
+    box-sizing: border-box;
+    position: relative;
+   
+}
+
+
+.nyheter .form p {
+    position: absolute;
+    top: -12px; 
+    left: 10px;
+    background-color: #252525;
+    padding: 0 5px;
+    font-size: 18px;
+    color: white;
+    margin: 0;
+}
+
+
+.nyheter input {
+    flex: 0 1 200px;
+    padding: 7px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: white; 
+    color: black;
+}
+
+
+.nyheter button {
+    background-color: #ffd700;
+    color: black;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-shrink: 0;
+   
+}
+
+
+
+.nyheter a {
+    display: block;
+    margin-top: 15px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.kundeservice {
+    flex: 1; 
+    max-width: 45%;
+    color: white;
+}
+
+.kundeservice h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.kundeservice ul {
+    list-style: none;
+    padding: 10px;
+    margin-top: -8px;
+    
+    
+}
+
+.kundeservice li {
+    margin-bottom: 3px;
+    
+}
+
+.kundeservice a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    
+    
+}
+
+.kundeservice a:hover {
+    text-decoration: underline;
+}
+.sosiale-medier {
+    padding: 10px;
+    text-align: left; 
+    margin-top: 14px;
+    color: white;
+}
+
+.sosiale-medier h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px 0 15px 10px;
+    top: -10px;
+    
+    
+}
+
+.sosiale-medier a {
+    display: inline-block; 
+    margin: 0 10px; 
+    font-size: 30px; 
+    color: white; 
+    
+    
+     
+}
+
+
+
+.oversikt {
+    max-width: 400px;
+    
+    
+    
+}
+
+.oversikt h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 40px 0 20px 0;
+}
+
+
