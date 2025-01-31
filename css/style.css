@@ -690,6 +690,7 @@ footer {
     overflow: hidden;
     background: #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
     margin: 0;
     width: 100%; 
 }
@@ -697,7 +698,7 @@ footer {
 .tips-artikkelkort img {
     width: 100%; 
     height: auto;
-    
+    display: block;
 }
 
 .tips-artikkelkort figcaption {
@@ -705,7 +706,7 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    
+    text-align: left;
     
 }
 
