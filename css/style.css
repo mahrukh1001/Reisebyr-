@@ -124,12 +124,6 @@ footer {
 
 }
   
-    
-
-    
-    
-
-
 
 
 
@@ -779,4 +773,57 @@ footer {
         text-align: left;
         color: #252525;
     }
+
+
+
+
+
+    .tips-artikkelkort figcaption h4 {
+        font-size: 24px; 
+        
+    }
+    .tips-artikkelkort figcaption {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        
+    }
+
+
+    
+    .tips-artikkelkort figcaption p {
+        font-size: 20px; 
+        flex-grow: 1;
+    }
+
+    
+    .tips-artikkelkort figcaption a {
+        align-self: flex-start;
+        margin-top: auto;
+    }
+
+    .tips-artikkelkort figcaption h4 {
+        font-size: 24px;
+       
+    }
+
+    
+
+    .tips-artikkelkort img {
+        height: 250px;  
+        object-fit: cover;
+    }
+    
+}
+
+
+
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 20px; 
+    background-color:#252525;
 }
