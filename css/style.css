@@ -1015,7 +1015,6 @@ footer {
 }
 
 
-
 .pc-flag {
     display: none;
 }
@@ -1449,4 +1448,92 @@ footer {
     cursor: pointer;
     
     
+}
+
+
+
+
+.rom img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.rom-info {
+    padding: 25px;
+}
+
+.rom-info h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.rom-info .plass {
+    font-size: 18px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.score {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.score .score-box {
+    background-color: #019101;
+    color: white;
+    padding: 4px 8px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.score p:last-child {
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.prisinfo-liste {
+    font-size: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+.prisinfo-liste li:first-child {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -5px;
+}
+
+.prisinfo-liste li {
+    margin-bottom: 8px;
+}
+.plass {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+    gap: 8px; 
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.plass li {
+    margin: 0;
+    padding: 0;
+    display: inline-block; 
 }
