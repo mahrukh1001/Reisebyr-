@@ -1812,3 +1812,29 @@ nav ul {
 nav ul li {
     margin-right: 20px;
 }
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: normal;
+    padding-bottom: 5px;
+    display: inline-block;
+    position: relative;
+    padding: 10px;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #1ca2c1;;
+    
+}
+
+nav ul li a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    
+}
+
