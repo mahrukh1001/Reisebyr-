@@ -1452,8 +1452,105 @@ footer {
 
 
 
+@media (min-width: 1024px) and (max-width: 1400px){
+    .velg-selv {
+        position: sticky;
+        bottom: 45px;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        grid-column: span 3;
+        grid-row: 3;
+        
+    }
     
 
+    .tilgjengelige-rom {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        grid-template-rows: auto auto; 
+        gap: 30px;
+        max-width: 1000px;
+        margin: 0 auto;
+        min-height: 120vh;
+        
+        
+    }
+    .rom {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .rom:nth-child(4) {
+        max-width: 1000px;
+        grid-column: span 1; 
+        justify-self: flex-start;
+        max-width: 450px; 
+        
+        
+    }
+
+    .rom img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+        flex-shrink: 0;
+        
+        
+    }
+    .rom-info{
+        flex-grow: 1;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: left !important;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        
+        
+    }
+    .velg-rom{
+        max-width: 1000px;
+        margin: 0 auto 20px;
+        padding-top: 50px;
+        padding-left: 200px;
+        margin-bottom: -20px;
+    
+    }
+    .rom-info h3{
+        margin-top: -12px;
+        padding-top: 0;
+        font-size: 22px;
+        margin-left: -16px;
+
+    }
+    .rom-info .score{
+        margin-left: -16px;
+    }
+    .rom-info .prisinfo-liste {
+        font-size: 16px;
+        margin-left: -16px;
+    }
+
+    .rom-info .plass{
+        margin-left: -16px;
+    }
+    .plass li {
+        white-space: nowrap;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .rom-detaljer {
+        gap: 10px;
+        margin-top: auto;
+    }
+    
+}
 .rom img {
     width: 100%;
     height: auto;
@@ -1579,7 +1676,8 @@ footer {
     align-items: center;
     justify-content: center;
     width: 20px;
-    height: 20px; 
+    height: 20px;
+    
 }
 
 
