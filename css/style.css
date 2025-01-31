@@ -998,7 +998,7 @@ footer {
 .sosiale-medier h3 {
     font-size: 18px;
     font-weight: bold;
-    margin: 2px 0 15px 10px;
+    margin: 5px 0 15px 10px;
     top: -10px;
     
     
@@ -1009,8 +1009,8 @@ footer {
     margin: 0 10px; 
     font-size: 30px; 
     color: white; 
-    
-    
+    text-decoration: none;
+    top: -10px;
      
 }
 
@@ -1018,7 +1018,7 @@ footer {
 
 .oversikt {
     max-width: 400px;
-    
+    padding: 20px;
     
     
 }
