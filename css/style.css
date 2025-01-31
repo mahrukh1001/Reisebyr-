@@ -1794,3 +1794,21 @@ footer {
 }
 
 
+
+nav {
+    padding-top: 20px;
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    border-bottom: 2px solid #ddd; 
+    padding-bottom: 5px; 
+}
+
+nav ul li {
+    margin-right: 20px;
+}
