@@ -1921,10 +1921,8 @@ nav ul li a.active::after {
         color: white;
     }
 
-    .progressbar .active {
-        font-weight: bold;
-        text-transform: uppercase;
-    }
+    
+    
 }
 
 
@@ -1976,7 +1974,7 @@ fieldset {
     border: none;
     padding: 10px 15px;
     border-radius: 10px;
-    
+    margin-top: -10px;
 }
 
 .bestiller {
@@ -2003,7 +2001,7 @@ label {
     font-size: 14px;
     margin-top: 10px;
     gap: 10px;
-    
+    margin-bottom: 12px;
 }
 
 input, select {
@@ -2057,4 +2055,8 @@ input, select {
     height: 50px;
     text-align: center;
     margin-bottom: 30px;
+}
+
+.siste-trinn i {
+    font-size: 16px;
 }
